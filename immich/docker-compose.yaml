@@ -9,7 +9,7 @@ services:
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
       - ${EXTERNAL_PATH}/google_fotos:/usr/src/app/external/google_fotos
-      - ${EXTERNAL_PATH}/fotos_driver:/usr/src/app/external/fotos_drive
+      - ${EXTERNAL_PATH}/fotos_drive:/usr/src/app/external/fotos_drive
       - ${EXTERNAL_PATH}/instagram_rockeira:/usr/src/app/external/instagram_rockeira
     env_file:
       - .env
@@ -28,7 +28,7 @@ services:
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
       - ${EXTERNAL_PATH}/google_fotos:/usr/src/app/external/google_fotos
-      - ${EXTERNAL_PATH}/fotos_driver:/usr/src/app/external/fotos_drive
+      - ${EXTERNAL_PATH}/fotos_drive:/usr/src/app/external/fotos_drive
       - ${EXTERNAL_PATH}/instagram_rockeira:/usr/src/app/external/instagram_rockeira
     env_file:
       - .env
