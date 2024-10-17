@@ -1,0 +1,27 @@
+name: Ollama
+services:
+    open-webui:
+        ports:
+            - 3000:8080
+        # Ativar uso da GPU
+        # deploy:
+        #     resources:
+        #         reservations:
+        #             devices:
+        #                 - driver: nvidia
+        #                   count: all
+        #                   capabilities:
+        #                       - gpu
+        volumes:
+            - ollama:/root/.ollama
+            - open-webui:/app/backend/data
+        container_name: open-webui
+        restart: always
+        image: ghcr.io/open-webui/open-webui:ollama
+volumes:
+    ollama:
+        external: true
+        name: ollama
+    open-webui:
+        external: true
+        name: open-webui
