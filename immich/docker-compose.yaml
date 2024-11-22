@@ -7,10 +7,12 @@ services:
     volumes:
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
-      - ${EXTERNAL_PATH}/google_fotos:/usr/src/app/external/google_fotos
+      - ${EXTERNAL_PATH}/google_fotos:/usr/src/app/external/google_fotos_1
+      - ${EXTERNAL_PATH}/google_fotos:/usr/src/app/external/google_fotos_2
       - ${EXTERNAL_PATH}/fotos_drive:/usr/src/app/external/fotos_drive
       - ${EXTERNAL_PATH}/instagram_rockeira:/usr/src/app/external/instagram_rockeira
-      - ${EXTERNAL_PATH}/iCloud:/usr/src/app/external/iCloud
+      - ${EXTERNAL_PATH}/iCloud:/usr/src/app/external/Iphone_2016
+      - ${EXTERNAL_PATH}/iCloud:/usr/src/app/external/Iphone_2024
     env_file:
       - .env
     ports:
