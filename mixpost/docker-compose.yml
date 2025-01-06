@@ -24,8 +24,6 @@ services:
             test: ["CMD", "mysqladmin", "ping", "-p ${DB_PASSWORD}"]
             retries: 3
             timeout: 5s
-        command: >
-          bash -c "mysqld & sleep 30 & mysql -u${DB_USERNAME} -p${DB_PASSWORD} -e 'CREATE DATABASE IF NOT EXISTS ${DB_DATABASE};' & wait"
         restart: unless-stopped
     redis:
         image: 'redis:latest'
