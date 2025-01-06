@@ -4,7 +4,7 @@ services:
         env_file:
             - .env
         ports:
-            - 9000:80
+            - 9100:80
         volumes:
             - storage:/var/www/html/storage/app
             - logs:/var/www/html/storage/logs
