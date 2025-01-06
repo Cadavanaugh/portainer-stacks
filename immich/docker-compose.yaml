@@ -14,6 +14,7 @@ services:
       - ${EXTERNAL_PATH}/Iphone_2016:/usr/src/app/external/Iphone_2016:ro
       - ${EXTERNAL_PATH}/Iphone_2024:/usr/src/app/external/Iphone_2024:ro
       - ${EXTERNAL_PATH}/google_fotos_da_may:/usr/src/app/external/google_fotos_da_may:ro
+      - ${EXTERNAL_PATH}/teteu:/usr/src/app/external/teteu:ro
     env_file:
       - .env
     ports:
