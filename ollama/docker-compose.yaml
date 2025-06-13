@@ -2,7 +2,7 @@ name: Ollama
 services:
     open-webui:
         ports:
-            - 3000:8080
+            - 3050:8080
         # Ativar uso da GPU
         # deploy:
         #     resources:
